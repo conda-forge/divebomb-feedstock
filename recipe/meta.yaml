@@ -1,33 +1,22 @@
-{% set name = "divebomb" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: divebomb
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a38d17e993284cde5e2c687d3532ed126845accb181e0631afbf2cb7bee699e2
+  url: https://pypi.io/packages/source/d/divebomb/divebomb-{{ version }}.tar.gz
+  sha256: c0d8dd5737c2da30844cce699c288ae051b403adf9368f7a7e0c456a76986dc5
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
     - pip
-    - pandas
-    - numpy
-    - sphinx
-    - plotly
-    - netcdf4
-    - peakutils
-    - scikit-learn
-    - ipywidgets
-    - xarray
-    - colorlover
   run:
     - python
     - pandas
