@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: divebomb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/divebomb/divebomb-{{ version }}.tar.gz
-  sha256: c0d8dd5737c2da30844cce699c288ae051b403adf9368f7a7e0c456a76986dc5
+  sha256: a0135c8a9508fda2c0fd94112192a640c26981000d44e8ca962ef61ef369a87e
 
 build:
   number: 0
@@ -39,7 +39,7 @@ about:
   license: GPL-2.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'An marine animal dive analysis tool'
+  summary: 'An aquatic animal analysis tool for diving behaviour'
   description: |
     Divebomb is a python package that uses pandas
     to divide a timeseries of depths into individual
