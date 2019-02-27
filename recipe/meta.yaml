@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: divebomb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/divebomb/divebomb-{{ version }}.tar.gz
-  sha256: a0135c8a9508fda2c0fd94112192a640c26981000d44e8ca962ef61ef369a87e
+  sha256: bff5261a61a93769aa17d0322fc9ce825770b5a25de31ff2c61a9a6bdf1c3567
 
 build:
   number: 0
