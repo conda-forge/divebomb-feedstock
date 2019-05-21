@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.0.7" %}
 
 package:
   name: divebomb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/divebomb/divebomb-{{ version }}.tar.gz
-  sha256: 21ac04b50d7d8f4c6e4fea2f22e55e3f4291b435fd9cf4bdfa1e776a8c1032e7
+  sha256: c7fa1495f88d6cf69a0fd4c5857bc5ac9c32e2e3e6b65311c73466e73d9eeadb
 
 build:
   number: 0
@@ -35,7 +35,7 @@ test:
     - divebomb
 
 about:
-  home: https://gitlab.oceantrack.org/anunes/divebomb
+  home: https://github.com/alexetnunes/divebomb
   license: GPL-2.0
   license_family: GPL
   license_file: LICENSE
@@ -47,7 +47,7 @@ about:
     dives.
 
   doc_url: http://divebomb.readthedocs.io/
-  dev_url: https://gitlab.oceantrack.org/anunes/divebomb
+  dev_url: https://github.com/alexetnunes/divebomb
 
 extra:
   recipe-maintainers:
