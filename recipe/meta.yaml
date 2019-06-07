@@ -1,4 +1,4 @@
-{% set version = "1.0.7" %}
+{% set version = "1.1.0" %}
 
 package:
   name: divebomb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/divebomb/divebomb-{{ version }}.tar.gz
-  sha256: c7fa1495f88d6cf69a0fd4c5857bc5ac9c32e2e3e6b65311c73466e73d9eeadb
+  sha256: 6dbd45f4bf11821c0d9ce1a09fdd7bbd47127c09d9c01d19f0a22aa2444338ad
 
 build:
   number: 0
@@ -47,7 +47,7 @@ about:
     dives.
 
   doc_url: http://divebomb.readthedocs.io/
-  dev_url: https://github.com/alexetnunes/divebomb
+  dev_url: https://github.com/ocean-tracking-network/divebomb
 
 extra:
   recipe-maintainers:
