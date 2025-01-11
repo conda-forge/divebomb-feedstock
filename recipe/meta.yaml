@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/divebomb/divebomb-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/divebomb/divebomb-{{ version }}.tar.gz
   sha256: 3abaf2acbada366c001b24b9c9ee8cafc8116c00caac0d0761e6deed04ed1eab
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - pandas
     - numpy
     - sphinx
@@ -31,6 +31,8 @@ requirements:
     - colorlover
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - divebomb
 
